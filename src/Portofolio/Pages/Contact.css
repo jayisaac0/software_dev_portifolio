@@ -1,0 +1,20 @@
+.contactcontainer {
+    width: 100% !important;
+}
+.contactcontainer form{
+    display: flex !important;
+    flex-flow: column !important;
+    width: 100% !important;
+}
+.contacttextField {
+   
+    width: 100%;
+}
+.contactdense {
+    margin-Top: 20px;
+}
+.contactmenu {
+    width: 100%;
+}
+
+

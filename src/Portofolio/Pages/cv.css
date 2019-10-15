@@ -1,0 +1,33 @@
+.cvalign{
+    margin-bottom: 150px;
+}
+.cvalign p{
+    text-align: justify !important;    
+}
+.cvalign h1, h2, h3, h4, h5, h6{
+    text-align:center !important;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.FLoatingNavigationMenu{
+    position: fixed;
+    right: 0;
+    bottom:0;
+    bottom:10%;
+    display:flex !important;
+    flex-direction: column !important;
+    margin-right:15px;
+}
+.FloatingNavMarginMenu{
+    margin-top:10px;
+}
+.centercvtext{
+    justify-content: center !important; /*centers items on the line (the x-axis by default)*/
+    align-items: center !important;
+    text-align: center !important;
+    
+}
+.ListTypeDefination{
+    list-style-type: circle;
+    margin-left: 50px;
+}

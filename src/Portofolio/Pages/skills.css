@@ -1,0 +1,65 @@
+.SkillsBody{
+    margin-bottom: 150px;
+}
+.CenterSkills{
+    overflow: hidden;
+    position: absolute;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center; /*centers items on the line (the x-axis by default)*/
+    align-items: center;
+    text-align: center;
+}
+.SkillsFullWidth{
+    width:100%;
+    height: 50vh;
+    margin-top:10%;
+    justify-content: center; /*centers items on the line (the x-axis by default)*/
+    align-items: center;
+}
+.imageCategory{
+    display:flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.infoAlign{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content:center;
+    align-items: center;
+    /* flex-basis: 100%; */
+    width:500px;
+    flex: 1;    
+}
+.FLoatingNavigation{
+    position: fixed;
+    right: 0;
+    top: 40%;
+    display:flex !important;
+    flex-direction: column !important;
+    margin-right:15px;
+}
+.FloatingNavMargin{
+    margin-top:10px;
+}
+
+@media screen and (max-width: 840px) { 
+
+    .SkillsBody{
+        margin-bottom: 150px;
+    }
+    .FLoatingNavigation{
+        position: fixed;
+        right: 0;
+        top: 40%;
+        display:flex !important;
+        flex-direction: column !important;
+        margin-right:15px;
+    }
+    .FloatingNavMargin{
+        margin-top:10px;
+    }
+
+}

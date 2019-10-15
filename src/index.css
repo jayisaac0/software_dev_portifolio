@@ -1,13 +1,80 @@
-body {
+html body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Ovo', serif;
+  background: #fff;
+  font-size: 25px !important;
+  line-height: initial !important;
 }
 
+h1, h2, h3, h4, h5, h6{
+  font-weight: bold;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+a{
+  text-decoration: none !important;
+}
+.CenterContent{
+  text-align: center;
+}
+.ImageSizing{
+
+  width:auto;
+  height:150px;
+  /* border-radius:150px; */
+}
+hr{
+  color:rgb(238, 238, 238) !important;
+}
+.material-icons{
+  font-size: 30px;
+}
+
+.socialsize{
+  font-size:50px !important;
+  margin-left: 30px;
+}
+
+.socialsizep{
+  width:20px !important;
+  margin-left: 30px;
+}
+
+.CardWidthbottommargin{
+  margin-bottom: 10px;
+}
+
+.dtwo{
+  height: 25px;
+  margin-top: 4px;  
+}
+.dthree{
+  height: 25px;
+  margin-top: 5px;  
+}
+.titleMargin{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin:40px auto;  
+}
+@media screen and (max-width: 840px) { 
+  html body {
+    font-size: 20px !important;
+  }  
+  .ImageSizing{
+    width:50%;
+    height:auto;
+  }
+  body{
+    font-size: 25px !important;
+    line-height: initial !important;
+  }
+  .centeraligning{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }

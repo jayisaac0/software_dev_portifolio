@@ -1,0 +1,65 @@
+.CardWidth{
+    width:100%;
+}
+.ClassMedia{
+    width:100px;
+}
+.CardActionArea
+{
+    display:flex !important;
+    flex-direction: row !important;
+    flex:1, 2;
+}
+.ImageCard{
+    width:40% !important;
+}
+.ImageCard img{
+    /* width:100% !important; */
+    width: 420px;
+    height: 300px;
+}
+.InfoCard{
+    width:60% !important;
+}
+.ProjectImageSizing{
+    width:100%;
+}
+.CardActions{
+    right:0;
+    background: rgb(100, 99, 99);
+}
+
+@media screen and (max-width: 840px) { 
+    .ProjectsContainer p{
+        text-align: justify !important;
+        margin:10px;
+    }
+    .ProjectsContainer h1, h2, h3, h4, h5, h6{
+        text-align: center !important;
+    }
+    .CardWidth{
+        width:100%;
+        padding-bottom: 10px;
+    }
+    .ClassMedia{
+        width:100px;
+    }
+    .CardActionArea
+    {
+        display:flex !important;
+        flex-direction: column !important;
+        flex:1, 2;
+    }
+    .ImageCard{
+        width:100%;
+    }
+    .InfoCard{
+        width:100%;
+    }
+    .ProjectImageSizing{
+        width:100%;
+    }
+    .ProjectsContainer{
+        margin-bottom: 150px;
+    }
+}

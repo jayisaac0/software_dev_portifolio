@@ -1,68 +1,77 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# DEV-J PORTIFOLIO AND CV
 
-## Available Scripts
+> ## This is a professional platform that is ment to showcase my professional skills and persuits to the rest of the world.
+- 
+    > Access portifolio url <http://jayisaac0.com>
 
-In the project directory, you can run:
+![DEV-J|512x397, 20%](src/assets/icon.png)
 
-### `npm start`
+# `TECHNOLOGIES`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- react js
+- Node js
+- Mysql
+- Material lite
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## `APPERANCE`
 
-### `npm test`
+![DEV-J|512x397, 20%](src/assets/portfolio.png)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## `INSTALLATION`
 
-### `npm run build`
+- Clone the project repository <https://github.com/jayisaac0/software_dev_portifolio.git>
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    >$ **git clone <https://github.com/jayisaac0/software_dev_portifolio.git>**
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+    >$ **cd software_dev_portfolio**
+- Run one of the commands bellow to install all dependencies used in this project
+    > $ **yarn add**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    > $ **npm install**
+- To launch the product run one of the commands bellow in your terminal
+    > $ **yarn run start**
+     
+    > $ **npm start**
+- The project will open in the  local environment on your machine <http://localhost:3000> and can be accessed in your favourite browser
+- The page will reload if you make edits.<br>
+- You will also see any lint errors in the console.
 
-### `npm run eject`
+## `BACK-END SERVICE INSTALLATION`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- This portifolio has got a back-end service and can be cloned from <http://localhost:3000>
+    >$ **git clone <http://localhost:3000>**
+- Run one of the commands bellow to install all dependencies used in this project
+    > $ **yarn add**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    > $ **npm install**
+- To launch service, run one of the commands bellow in your terminal
+    > $ **nodemon**
+     
+    > $ **node index.js**
+- The back-end service will run via port **2500** <http://localhost:2500> and can be accessed in postman for testing
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## `DATABASE USED`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- There are a number of **SQL** databases that can be used in this project and i'll share hor to get to use xampp servers to run serve the portfolio.
 
-## Learn More
+- Download and install xampp in your current OS
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    > **Xampp server download link**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    > **https://www.apachefriends.org/download.html**
 
-### Code Splitting
+    > **Linux installation guide**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+    > **https://vitux.com/how-to-install-xampp-on-your-ubuntu-18-04-lts-system**
 
-### Analyzing the Bundle Size
+    > **Mac installation guide**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+    > **https://www.webucator.com/how-to/how-install-start-test-xampp-on-mac-osx.cfm**
 
-### Making a Progressive Web App
+    > **Windows installation guide**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+    > **https://www.wikihow.com/Install-XAMPP-for-Windows**
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### `LICENCE`
+MIT licence
