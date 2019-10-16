@@ -15,7 +15,7 @@
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -23,7 +23,8 @@
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Ovo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Miltonian+Tattoo&display=swap" rel="stylesheet">
-
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <style>
     /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -97,5 +98,18 @@ table {
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="text/javascript">
+      if (navigator.serviceWorker.controller) {
+        console.log('[PWA Builder] active service worker found, no need to register')
+      } else {
+        //Register the ServiceWorker
+        navigator.serviceWorker.register('../serviceWorker.js', {
+          scope: '.'
+        }).then(function(reg) {
+          console.log('Service worker has been registered for scope:'+ reg.scope);
+        });
+      }
+    </script>
+
   </body>
 </html>

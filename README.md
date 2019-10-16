@@ -39,7 +39,9 @@
 ## `BACK-END SERVICE INSTALLATION`
 
 - This portifolio has got a back-end service and can be cloned from <http://localhost:3000>
-    >$ **git clone <http://localhost:3000>**
+    >$ **heroku git:clone -a mighty-eyrie-34346**
+
+    >$ cd **mighty-eyrie-34346**
 - Run one of the commands bellow to install all dependencies used in this project
     > $ **yarn add**
 
@@ -48,7 +50,8 @@
     > $ **nodemon**
      
     > $ **node index.js**
-- The back-end service will run via port **2500** <http://localhost:2500> and can be accessed in postman for testing
+- The back-end service will run via port **2500** <http://localhost:2500> localy or <https://mighty-eyrie-34346.herokuapp.com> and can be accessed in postman for testing
+
 
 ## `DATABASE USED`
 

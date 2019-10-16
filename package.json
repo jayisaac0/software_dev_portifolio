@@ -33,6 +33,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "http://localhost",
-  "proxy": "http://localhost:2500"
+  "proxy": "https://mighty-eyrie-34346.herokuapp.com/"
 }

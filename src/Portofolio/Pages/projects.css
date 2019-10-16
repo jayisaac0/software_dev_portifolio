@@ -13,10 +13,17 @@
 .ImageCard{
     width:40% !important;
 }
+.titleMargin{
+    padding-top:15px;
+    padding-bottom:15px;
+}
 .ImageCard img{
     /* width:100% !important; */
-    width: 420px;
-    height: 300px;
+    /* width: 420px;
+    height: 300px; */
+    width: 300px;
+    height: auto;
+    margin: 40px 20px 20px 20px;
 }
 .InfoCard{
     width:60% !important;

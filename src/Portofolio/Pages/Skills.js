@@ -27,6 +27,7 @@ class Skills extends Component {
                     <div className="SkillsFullWidth animated fadeInUp slower" key={ category.categories_id }>
                         <div id="frontend" className="CenterSkills">
                         <h3 className="CenterContent animated fadeInUp slower">{category.category_title}</h3>
+                        <p>{category.category_description}</p>
                         <br />
                             <div className="imageCategory">
                                 { subcategories.filter(subcategory => subcategory.category_id === category.categories_id).map(s =>
