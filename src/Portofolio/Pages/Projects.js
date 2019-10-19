@@ -14,8 +14,8 @@ class Projects extends Component {
   };
 
   async componentDidMount() {
-    const { data: projectcategories } = await axios.get('/api/projectcategories');
-    const { data: projectsubcategories } = await axios.get('/api/projectsubcategories');
+    const { data: projectcategories } = await axios.get(`${process.env.REACT_APP_API_URL}/api/projectcategories`);
+    const { data: projectsubcategories } = await axios.get(`${process.env.REACT_APP_API_URL}/api/projectsubcategories`);
     this.setState({projectcategories, projectsubcategories});
   }
   

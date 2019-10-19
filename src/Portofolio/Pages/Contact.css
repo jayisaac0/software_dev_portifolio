@@ -1,19 +1,19 @@
-.contactcontainer {
+.datacontainer {
     width: 100% !important;
 }
-.contactcontainer form{
+.datacontainer form{
     display: flex !important;
     flex-flow: column !important;
     width: 100% !important;
 }
-.contacttextField {
+.datatextField {
    
     width: 100%;
 }
-.contactdense {
+.datadense {
     margin-Top: 20px;
 }
-.contactmenu {
+.datamenu {
     width: 100%;
 }
 

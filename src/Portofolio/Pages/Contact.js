@@ -1,85 +1,86 @@
-import React, { Component } from 'react';
-import Button from '@material-ui/core/Button';
-import Icon from '@material-ui/core/Icon';
+import React from 'react';
+import axios from 'axios';
+  import { ToastContainer, toast } from 'react-toastify';
+
+import Joi from 'joi-browser';
+import Form from '../common/Form';
 import Input from "../common/Input";
 import './Contact.css';
+import 'react-toastify/dist/ReactToastify.css';
 
-class Contact extends Component {
+class Contact extends Form {
 
     state = {
-        contact: {name: '', email: '', subject: '', message: ''}, 
+        data: {name: "", email: "", subject: "", message: ""}, 
         errors: {}
     };
 
-    // validate = () => {
-    //     const errors = {};
-
-    //     const { contact } = this.state;
-    //     if(contact.name.trim() === '') { errors.name = 'Provide name' };
-    //     if(contact.email.trim() === '') { errors.email = 'Provide email' };
-    //     if(contact.subject.trim() === '') { errors.subject = 'Provide subject' };
-    //     if(contact.message.trim() === '') { errors.message = 'Provide message' };
-    //     return Objects().Keys(errors).length === 0 ? null : errors;
-    // }
-    
-    handleSubmit = event => {
-        event.preventDefault();
-        // const errors = this.validate();
-        // console.log(errors);
-        // this.setState({errors});
-        // if (errors) return;
+    schema = {
+        name: Joi.string().required().label('Name'),
+        email: Joi.string().required().label('Email').email(),
+        subject: Joi.string().required().label('Subject').min(10),
+        message: Joi.string().required().label('Message').min(50)
     };
 
-    handleChange = ({ currentTarget: input }) => {
-        const contact = {...this.state.contact}
-        contact[input.name] = input.value;
-        this.setState({ contact });
+    doSubmit = async () => {
+        const obj = { name: "JOshua", email: "j@j.w", subject: "sndn", message: "sdhcl" };
+        const { data: post } = await axios.post('/api/email', obj);
+        console.log(post);
+        const posts = [post, ...this.state.posts];
+        this.setState({posts});
+
+        // toast("Default Notification !");
+        
+        console.log("SUBMITTED");
     };
 
     render() { 
-        const { contact } = this.state;
+        const { data, errors } = this.state;
 
         return (
             <div>
+                <ToastContainer enableMultiContainer position={toast.POSITION.BOTTOM_RIGHT} />
             <div className="HomeGrids">
                 <div className="InnerGrid animated bounceInLeft slower">
                     <div className="CenterContent">
                         <span className="material-icons" style={{ fontSize: '300px' }}>email</span>
                         {/* <h1>Software engineer</h1> */}
-                        <h2>CONATACT ME</h2>
+                        <h2>CONTACT ME</h2>
                         <br />
                     </div>
                 </div>
                 <div className="InnerGrid animated bounceInRight slower">
-                    {/* <h5>CONTACT FORM</h5> */}
-                    <form onSubmit={this.handleSubmit} className="contactcontainer">
+                    {/* <h5>data FORM</h5> */}
+                    <form onSubmit={this.handleSubmit} className="datacontainer">
 
 
 
-                            <Input
-                                id="outlined-with-placeholder"
-                                name="name"
-                                value={contact.name}
-                                onChange={this.handleChange}
-                                label="Provide full name"
-                                placeholder="Enter name"
-                                className="contacttextField"
-                                margin="normal"
-                                variant="outlined"
-                            />
+                        <Input
+                            id="outlined-with-placeholder"
+                            name="name"
+                            value={data.name}
+                            onChange={this.handleChange}
+                            label="Provide full name"
+                            placeholder="Enter name"
+                            className="datatextField"
+                            margin="normal"
+                            variant="outlined"
+                            error={errors.name}
+                        />
 
 
                         <Input
                             id="outlined-with-placeholder"
                             htmlFor="email"
                             name="email"
-                            value={contact.email}
+                            value={data.email}
                             onChange={this.handleChange}
                             label="Provide your email"
                             placeholder="Enter email"
-                            className="contacttextField"
+                            className="datatextField"
                             margin="normal"
                             variant="outlined"
+                            error={errors.email}
                         />
 
 
@@ -87,13 +88,14 @@ class Contact extends Component {
                             id="outlined-with-placeholder"
                             htmlFor="subject"
                             name="subject"
-                            value={contact.suject}
+                            value={data.suject}
                             onChange={this.handleChange}
                             label="Provide subject"
                             placeholder="Enter subject"
-                            className="contacttextField"
+                            className="datatextField"
                             margin="normal"
                             variant="outlined"
+                            error={errors.subject}
                         />
 
 
@@ -101,22 +103,18 @@ class Contact extends Component {
                             id="outlined-multiline-static"
                             htmlFor="message"
                             name="message"
-                            value={contact.message}
+                            value={data.message}
                             onChange={this.handleChange}
                             label="Enter message to send"
                             multiline
                             rows="4"
-                            className="contacttextField"
+                            className="datatextField"
                             margin="normal"
                             variant="outlined"
+                            error={errors.message}
                         />
 
-                        <Button size="large" variant="contained"
-                        color="primary"
-                        type="submit"
-                        className="contactbutton"
-                        endIcon={<Icon>send</Icon>}
-                        >Send message</Button>
+                        {this.renderButton('Send message', 'send')}
                     </form>
 
                 </div>

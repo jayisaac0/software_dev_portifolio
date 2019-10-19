@@ -5,9 +5,18 @@ html body {
   font-size: 25px !important;
   line-height: initial !important;
 }
-
+.errorFont{
+  color:red;
+  font-size: 12px;
+  padding:0px;
+  margin:0px;
+  width:100%;
+}
 h1, h2, h3, h4, h5, h6{
   font-weight: bold;
+}
+ToastContainer{
+  z-index: 50px !important;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

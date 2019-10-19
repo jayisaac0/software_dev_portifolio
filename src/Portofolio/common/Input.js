@@ -1,7 +1,7 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
 
-const Input = ({ name, value, label, onChange, inputId }) => {
+const Input = ({ name, value, label, onChange, inputId, error }) => {
     return (
         <div className="containerFillWidth">
             <TextField
@@ -11,10 +11,11 @@ const Input = ({ name, value, label, onChange, inputId }) => {
                 onChange={onChange}
                 label={label}
                 placeholder="Enter name"
-                className="contacttextField"
+                className="datatextField"
                 margin="normal"
                 variant="outlined"
             />
+            {error && <span className="errorFont">{ error }</span> }
         </div>        
     );
 }

@@ -12,8 +12,8 @@ class Skills extends Component {
     };
 
     async componentDidMount() {
-        const {data: categories} = await axios.get('/api/categories');
-        const {data: subcategories} = await axios.get('/api/subcategories');
+        const {data: categories} = await axios.get(`${process.env.REACT_APP_API_URL}/api/categories`);
+        const {data: subcategories} = await axios.get(`${process.env.REACT_APP_API_URL}/api/subcategories`);
         this.setState({categories, subcategories});
     }
 
