@@ -24,7 +24,7 @@ export default function TopNavigation() {
       </nav>
       <nav className="mdl-navigation mdl-layout--small-screen-only">
         <a className="FloatingNavMargin" target="_newTab" href="mailto:jayisaac0@gmail.com"><img className="socialsize" src={gmail} alt={gmail} /> </a>
-        <a className="FloatingNavMargin mobilecall" target="_newTab" href="tell:+254770396785"><img className="socialsize" src={mobilecall} alt={mobilecall} /> </a>
+        <a className="FloatingNavMargin mobilecall" target="_newTab" href="tell:0770396785"><img className="socialsize" src={mobilecall} alt={mobilecall} /> </a>
       </nav>
     </div>
   </header>
