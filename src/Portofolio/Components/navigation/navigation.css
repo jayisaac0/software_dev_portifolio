@@ -1,56 +1,59 @@
-.BottomNavigation{
-    position: fixed;
-    bottom: 0;
-    width:100%;
-    z-index: 5;
+.BottomNavigation {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 5;
 }
-.mobilecall{
-    color:#fff;
+.mobilecall {
+  color: #fff;
 }
 .TopNavigationReset {
+  box-shadow: none !important;
+  height: 60px !important;
+  /* padding-top:10px; */
+  font-weight: bold;
+  background: #000 !important;
+}
+.spanBrand {
+  font-family: "Miltonian Tattoo", cursive;
+
+  font-size: 38px;
+}
+.TopNavigationPadding {
+  padding-left: 100px;
+}
+.NavResetPadding {
+  padding-left: 5px;
+}
+.page-content-resets {
+  margin: 50px;
+}
+@media screen and (min-width: 840px) {
+  .FullScreenHideMenuContent {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 840px) {
+  .SmallScreenHideMenuContent {
+    display: none !important;
+  }
+
+  .TopNavigationReset {
     box-shadow: none !important;
-    height:60px !important;
+    height: 60px !important;
     /* padding-top:10px; */
     font-weight: bold;
     background: #000 !important;
-}
-.spanBrand{
-    font-family: 'Miltonian Tattoo', cursive;
-
-    font-size: 38px;
-}
-.TopNavigationPadding{
-    padding-left: 100px;
-}
-.NavResetPadding{
-    padding-left:5px;
-}
-.page-content-resets{
-    margin:50px;
-}
-
-
-@media screen and (max-width: 840px) { 
-
-    
-    .TopNavigationReset {
-        box-shadow: none !important;
-        height:60px !important;
-        /* padding-top:10px; */
-        font-weight: bold;
-        background: #000 !important;
-    }
-    .spanBrand{
-        font-family: 'Miltonian Tattoo', cursive;
-        font-size: 38px;
-    }
-
-    .NavResetPadding{
-        padding-left:5px;
-    }
-    .page-content-resets{
-        margin:5px !important;
-    }
-    
-
   }
+  .spanBrand {
+    font-family: "Miltonian Tattoo", cursive;
+    font-size: 38px;
+  }
+
+  .NavResetPadding {
+    padding-left: 5px;
+  }
+  .page-content-resets {
+    margin: 5px !important;
+  }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-  import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+
 
 import Joi from 'joi-browser';
 import Form from '../common/Form';
@@ -23,15 +24,19 @@ class Contact extends Form {
     };
 
     doSubmit = async () => {
-        const obj = { name: "JOshua", email: "j@j.w", subject: "sndn", message: "sdhcl" };
-        const { data: post } = await axios.post('/api/email', obj);
-        console.log(post);
-        const posts = [post, ...this.state.posts];
-        this.setState({posts});
-
-        // toast("Default Notification !");
+        const obj = {...this.state.data};
+        // const createMail = await axios.post(`${process.env.REACT_APP_API_URL}/api/email`, obj);
+        await axios.post(`${process.env.REACT_APP_API_URL}/api/email`, obj)
+          .then((response) => {
+            console.log(response);
+            toast(response.data.message);
+          }, (error) => {
+            console.log(error);
+            toast("Sorry error occured!");
+          });        
         
-        console.log("SUBMITTED");
+        // console.log(createMail);
+        
     };
 
     render() { 
@@ -39,7 +44,8 @@ class Contact extends Form {
 
         return (
             <div>
-                <ToastContainer enableMultiContainer position={toast.POSITION.BOTTOM_RIGHT} />
+            <ToastContainer enableMultiContainer position={toast.POSITION.BOTTOM_RIGHT} />
+
             <div className="HomeGrids">
                 <div className="InnerGrid animated bounceInLeft slower">
                     <div className="CenterContent">

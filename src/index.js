@@ -5,7 +5,7 @@ import './index.css';
 import App from './Portofolio/App';
 import * as serviceWorker from './serviceWorker';
 
-console.log(process.env);
+// console.log(process.env);
 
 const routing = (
     <BrowserRouter>
