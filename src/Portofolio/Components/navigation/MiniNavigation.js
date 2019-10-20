@@ -19,7 +19,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 
-
+import curriculumvitae from '../../../assets/cv/curriculumvitae.pdf';
 
 import './navigation.css';
 
@@ -79,10 +79,12 @@ export default function MiniNavigation() {
             <ListItemIcon><MailIcon /></ListItemIcon>
             <ListItemText primary="View CV" />
           </ListItem>
+          <a download href={curriculumvitae}>
           <ListItem button key="Download CV">
             <ListItemIcon><MailIcon /></ListItemIcon>
             <ListItemText primary="Download CV" />
           </ListItem>
+          </a>
       </List>
     </div>
   );

@@ -23,8 +23,8 @@ export default function TopNavigation() {
         <Link to={'/cv'} className="TopNavigationPadding animated fadeInRight slower">Cv</Link>
       </nav>
       <nav className="mdl-navigation mdl-layout--small-screen-only">
-        <a className="FloatingNavMargin" target="_newTab" href="mailto:jayisaac0@gmail.com"><img className="socialsize" src={gmail} alt={gmail} /> </a>
-        <a className="FloatingNavMargin mobilecall" target="_newTab" href="tell:0770396785"><img className="socialsize" src={mobilecall} alt={mobilecall} /> </a>
+        <a className="mobilecall" target="_newTab" href="mailto:jayisaac0@gmail.com"><img className="socialsize" src={gmail} alt={gmail} /> </a>
+        <a className="mobilecall" target="_newTab" href="tell:0770396785"><img className="socialsize" src={mobilecall} alt={mobilecall} /> </a>
       </nav>
     </div>
   </header>
