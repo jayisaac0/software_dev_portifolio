@@ -2,8 +2,8 @@ html body {
   margin: 0;
   font-family: "Ovo", serif;
   background: #fff;
-  font-size: 25px !important;
-  line-height: initial !important;
+  font-size: 19px!important;
+  line-height: 1.3 !important;
   font-size: 60%;
 }
 .centeredreset {
