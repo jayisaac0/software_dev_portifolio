@@ -6,8 +6,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Chip from '@material-ui/core/Chip';
 import PublicIcon from '@material-ui/icons/Public';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import TagFacesIcon from '@material-ui/icons/TagFaces';
-
+import CodeIcon from '@material-ui/icons/Code';
 class Projects extends Component {
     state = { 
         projects: [
@@ -75,9 +74,9 @@ class Projects extends Component {
                                     <p>
                                         {project.description}<br />
                                         <b>
-                                            <Chip className="ic_marg" icon={<TagFacesIcon />} label={project.frontend}   />
-                                            <Chip className="ic_marg" icon={<TagFacesIcon />} label={project.backend}   />
-                                            <Chip className="ic_marg" icon={<TagFacesIcon />} label={project.database}   />
+                                            <Chip className="ic_marg" icon={<CodeIcon />} label={project.frontend}   />
+                                            <Chip className="ic_marg" icon={<CodeIcon />} label={project.backend}   />
+                                            <Chip className="ic_marg" icon={<CodeIcon />} label={project.database}   />
                                         </b>
                                     </p>
                                     {project.opensource === false ? null :
