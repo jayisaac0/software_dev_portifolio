@@ -1,102 +1,249 @@
-html body {
+body {
   margin: 0;
-  font-family: "Ovo", serif;
-  background: #fff;
-  font-size: 19px!important;
-  line-height: 1.3 !important;
-  font-size: 60%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background: #14202b; */
 }
-.centeredreset {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+.jss148 {
+    width: 100% !important;
 }
-.errorFont {
-  color: red;
-  font-size: 12px;
-  padding: 0px;
-  margin: 0px;
-  width: 100%;
-  display: block;
+.ic_marg{
+    margin-right: 5px;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: bold;
-}
-ToastContainer {
-  z-index: 50px !important;
+.makeStyles-root-138{
+    width: 100% !important;
+    position: fixed;
+    bottom: 0;
+    /* width: 100%; */
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-a {
-  text-decoration: none !important;
+a{
+    text-decoration: none;
 }
-.CenterContent {
-  text-align: center;
-}
-.ImageSizing {
-  width: auto;
-  height: 150px;
-  /* border-radius:150px; */
-}
-hr {
-  color: rgb(238, 238, 238) !important;
-}
-.material-icons {
-  font-size: 30px;
-}
+@media only screen and (min-width: 600px) {
 
-.socialsize {
-  font-size: 50px !important;
-  margin-left: 30px;
+    .MuiDialogContent-root{
+        width: auto;
+        align-items: center; 
+        justify-content: center; 
+        text-align: center;
+        background: rgb(246, 251, 250); 
+    }
+    .MuiPaper-root.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm.MuiPaper-rounded{
+        width: 50%;
+        padding: 0px;
+        margin: 0px;
+        left: 0;
+        position: absolute;
+        height: 100%;
+        top: 0;
+    }
 }
-
-.socialsizep {
-  width: 20px !important;
-  margin-left: 30px;
+.MuiDialog-paperScrollPaper {
+    display: flex;
+    max-height: 100% !important ;
+    flex-direction: row;
 }
-
-.CardWidthbottommargin {
-  margin-bottom: 10px;
+.MuiDialog-paperWidthSm {
+    max-width: unset !important;
 }
-
-.dtwo {
-  height: 25px;
-  margin-top: 4px;
+.MuiDrawer-paperAnchorBottom{
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    /* padding: 2%; */
+    margin-left: auto;
+    margin-right: auto;
 }
-.dthree {
-  height: 25px;
-  margin-top: 5px;
+.makeStyles-root-148 {
+    width: 100% !important;
 }
-.titleMargin {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 40px auto;
+.MuiPaper-root.MuiAppBar-root.MuiAppBar-positionStatic.MuiAppBar-colorPrimary {
+    box-shadow:none;
+    color: #000;
+    background: #fff;
+    position: fixed;
+    top: 0;
 }
-@media screen and (max-width: 840px) {
-  html body {
-    font-size: 20px !important;
-  }
-  .ImageSizing {
-    width: 50%;
-    height: auto;
-  }
-  body {
-    font-size: 25px !important;
-    line-height: initial !important;
-  }
-  .centeraligning {
-    justify-content: center;
-    align-items: center;
+.MuiPaper-root.MuiPaper-elevation16.MuiDrawer-paper.MuiDrawer-paperAnchorRight{
+    height: auto !important;
+    top: 20%;
+}
+.width_padding{
+    width:100%;
+    
+}
+.center_content{
     text-align: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex; 
+}
+.content_fix{
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  flex-direction: column;
+  padding: 10%;
+}
+.imagesizeres{
+    width: 100%;
+    height:auto;
+}
+.spacing{
+    margin-bottom: 5%;
+}
+#text{
+    margin-right: 10px;
+}
+.logossize{
+    width:20%;
+    height:200px;
+    margin:1%;
+}.MuiPaper-elevation4 {
+    box-shadow: none;
+}
+.half_width_padding{
+    width: 50%;
+    float: left;
+}
+
+.third_width_padding{
+    width: 33.3%;
+    float: left;
+    display: flex; 
+
+    align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  flex-direction: column;
+
+}
+.two_divisions{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    flex-direction: row;
+}
+.centericons{
+    display: flex;
+}
+.makeStyles-root-171 {
+    bottom: 0;
+    position: fixed;
+    width: 100% !important;
+}
+  .bottom_margin{
+    margin-bottom: 5% !important;
+  }
+@media only screen and (max-width: 600px) {
+    .MuiDialogContent-root{
+     width: fit-content;   
+    }
+    /* SMALL SCREEN */
+    .logossize{
+        width:30%;
+        height:auto;
+        margin:1%;
+    }
+    .nodisplay{
+        display: none !important;
+    }
+    .jss148 {
+        width: 100% !important;
+        position: fixed;
+        bottom:0;
+    }
+    .makeStyles-root-148 {
+        width: 100% !important;
+        position: fixed;
+        bottom:0;
+    }
+  .display_smallscreen{
+      display: none;
+  }
+  .frame_width{
+    width:90%;
+  }
+  .top_margin{
+    margin-top: 30%;
+  }
+  .bottom_margin{
+    margin-bottom: 10% !important;
+  }
+  .imagesize{
+    display: flex; 
+    align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  flex-direction: row;
+  }
+ .smdev{
+    text-align: center;
+    flex-direction: column;
+ }
+  .MuiGridListTile-root{
+      height: auto !important;
+        width: 100% !important;
+  }
+  .half_width_padding{
+    width: 100%;
+    float: left;
+}
+.two_divisions{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    flex-direction: column-reverse;
+}
+.two_divisions img{
+    width: 100%;
+    height: auto;
+}
+.smallscreenfootersp{
+    margin-bottom: 5%;
+}
+.third_width_padding{
+    width: 100%;
+    float: left;
+    display: flex; 
+
+    align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  flex-direction: column;
+
+}
+.MuiListItem-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+    /* text-align: justify !important;
+    align-items: center !important; */
+}
+
+}
+
+@media only screen and (min-width: 600px) {
+    /* BIG SCREEN */
+    .clascount{
+        width:48%;
+        margin:1%;
+        float: left;
+    }
+  .display_bigscreen{
+      display: none;
+  }
+  .frame_width{
+    width:60%;
+  }
+  .top_margin{
+    margin-top: 5%;
   }
 }

@@ -1,0 +1,102 @@
+html body {
+  margin: 0;
+  font-family: "Ovo", serif;
+  background: #fff;
+  font-size: 19px!important;
+  line-height: 1.3 !important;
+  font-size: 60%;
+}
+.centeredreset {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+.errorFont {
+  color: red;
+  font-size: 12px;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+ToastContainer {
+  z-index: 50px !important;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+a {
+  text-decoration: none !important;
+}
+.CenterContent {
+  text-align: center;
+}
+.ImageSizing {
+  width: auto;
+  height: 150px;
+  /* border-radius:150px; */
+}
+hr {
+  color: rgb(238, 238, 238) !important;
+}
+.material-icons {
+  font-size: 30px;
+}
+
+.socialsize {
+  font-size: 50px !important;
+  margin-left: 30px;
+}
+
+.socialsizep {
+  width: 20px !important;
+  margin-left: 30px;
+}
+
+.CardWidthbottommargin {
+  margin-bottom: 10px;
+}
+
+.dtwo {
+  height: 25px;
+  margin-top: 4px;
+}
+.dthree {
+  height: 25px;
+  margin-top: 5px;
+}
+.titleMargin {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px auto;
+}
+@media screen and (max-width: 840px) {
+  html body {
+    font-size: 20px !important;
+  }
+  .ImageSizing {
+    width: 50%;
+    height: auto;
+  }
+  body {
+    font-size: 25px !important;
+    line-height: initial !important;
+  }
+  .centeraligning {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
